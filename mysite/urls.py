@@ -18,7 +18,8 @@ from django.urls import path
 from registration.views import welcome
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
+    path('admin/', welcome),
     path('welcome/', welcome , name ='welcome'),
     path('', welcome , name ='welcome'),  
 ]
